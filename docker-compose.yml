@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  llm-backend:
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    volumes:
+      - ./web:/usr/src/app/web/
+      - ./api:/usr/src/app/api/
+    ports:
+      - "8967:8967"
+    networks:
+      - my-network
+
+  llm-frontend:
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    volumes:
+      - ./web:/usr/src/app/web/
+    ports:
+      - "7860:7860"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge

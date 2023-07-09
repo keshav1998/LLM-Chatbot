@@ -19,9 +19,9 @@ LLM chatbot answers your questions poorly using LLaMA/alpaca. 🚀
 """
 origins = [
     "http://127.0.0.1",
-    "http://api:9144",
-    "http://127.0.0.1:9142",
-    "http://127.0.0.1:9144"
+    "http://api:9098",
+    "http://127.0.0.1:9096",
+    "http://127.0.0.1:9098"
 ]
 
 app = FastAPI(title="LLM Bot", version="0.0.1", description=description)

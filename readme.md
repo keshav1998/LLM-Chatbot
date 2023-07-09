@@ -7,7 +7,8 @@ LLM chat is a chat interface crafted with [huggingface-falcon-7B](https://huggin
 
 🎥 Demo:
 
-[demo.webm]()
+[demo.webm](https://github.com/keshav1998/LLM-Chatbot/assets/24654578/9d2352ad-5f01-4193-b4a9-ec7f15423b3e)
+
 
 ## ⚡️ Quick start
 

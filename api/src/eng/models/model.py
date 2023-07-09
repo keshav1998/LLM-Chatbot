@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 logging.basicConfig(level=logging.INFO)
 
-env_file = "../../../../.env"
+env_file = "../../../.env"
 if os.path.exists(env_file):
     load_dotenv(env_file)
     logging.info(f'Loading environment variables from {env_file}...')

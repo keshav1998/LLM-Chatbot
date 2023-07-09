@@ -1,0 +1,11 @@
+#---------------------------------------
+# Base image for runtime
+FROM python:3.11-slim-bullseye as base
+
+WORKDIR /usr/src/app
+
+COPY ./web /usr/src/app/web/
+
+RUN pip install gradio
+
+CMD ["python", "web/app.py"]

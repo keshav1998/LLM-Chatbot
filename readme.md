@@ -6,7 +6,8 @@ LLM chat is a chat interface crafted with [huggingface-falcon-7B](https://huggin
 - ⚙️ **FastAPI + LangChain** for the API, wrapping calls to [huggingface-falcon-7B](https://huggingface.co/tiiuae/falcon-7b) using the [python bindings](https://python.langchain.com/docs/modules/model_io/models/llms/integrations/huggingface_hub)
 
 🎥 Demo:
-[LLM_DEMO.webm](https://github.com/keshav1998/LLM-Chatbot/assets/24654578/12519583-0c7b-4ca6-be96-7d8a87b88cd4)
+
+[DEMO.webm](https://github.com/keshav1998/LLM-Chatbot/assets/24654578/33bfbf55-b5f7-4172-9e37-347c87b4e6ac)
 
 
 ## ⚡️ Quick start

@@ -1,7 +1,6 @@
 api/weights/**
 !api/weights/put_your_models_here.txt
 
-.env.*
 .env
 .venv
 !.env.sample

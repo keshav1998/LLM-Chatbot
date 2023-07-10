@@ -1,11 +1,14 @@
-# Create a simple gradio ui like chat gpt that interacts with LLM API
-
 import gradio as gr
 import requests
 import json
 
 def get_response(input_text):
-    # url from docker bridge network
+    '''
+    input_text: user input text
+    return: response from LLM API
+    '''
+    # llm-backend is the name of the container running the LLM API, 
+    # which is connected using docker-compose network bridge
     url = "http://" + "llm-backend" + ":" + "8967" + "/api/api/chat/"
     payload = json.dumps({"question": input_text, "description":''})  # convert dict to json string
     headers = {'Content-Type': 'application/json'}

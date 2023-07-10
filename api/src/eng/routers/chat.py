@@ -15,10 +15,14 @@ chat_router = APIRouter(
 
 @chat_router.get("/")
 async def read_root():
-    return {"Welcome": "NExT AI"}
+    return {"Welcome": "To LLM API house"}
 
 @chat_router.post("/")  # type: ignore          
 async def infer(question: Chat):
+    '''
+    question: user input text
+    return: response from LLM API
+    '''
     # Get prompt from API call
     llm, prompt = model_loader()
     question = question.question

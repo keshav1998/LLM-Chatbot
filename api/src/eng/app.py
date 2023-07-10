@@ -15,7 +15,7 @@ class Chat(BaseModel):
     description: str | None = None
 
 description = """
-LLM chatbot answers your questions poorly using LLaMA/alpaca. 🚀
+LLM chatbot answers your questions using LLaMA/alpaca/falcon/redpajama. 🚀
 """
 origins = [
     "http://127.0.0.1",

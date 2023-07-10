@@ -22,6 +22,12 @@ assert transformers.__version__ >= MIN_TRANSFORMERS_VERSION, f'Please upgrade tr
 
 
 def model_loader():
+    '''
+    Load model from HuggingFace Hub, pass it to LLMChain, and return LLMChain object
+
+    return: LLMChain object
+    
+    '''
     repo_id = os.getenv("REPO_ID")
     try:
         llm = HuggingFaceHub(repo_id=repo_id, model_kwargs={"temperature": 0.5, "max_length": 128}, 
@@ -32,8 +38,5 @@ def model_loader():
 
         prompt = PromptTemplate(template=template, input_variables=["question"])
         return llm, prompt
-        # tokenizer = AutoTokenizer.from_pretrained(model_path, resume_download=True)
-        # model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.bfloat16)
-        # return tokenizer, model
     except Exception as e:
         logging.error(f'Connection interrupted for download, retry model download {e}')

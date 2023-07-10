@@ -24,6 +24,10 @@ Then, just visit http://localhost:7860/,
 
 Ensure you have Docker Desktop installed, WSL2 configured, and enough free RAM to run models. 
 
+## 🖥️ Windows Setup
+
+Ensure you have Docker Desktop installed, and enough free RAM to run models, as models are using huggingface hub, ram impact will be low.
+
 ## 🧠 Supported Models
 
 We currently support the following models:

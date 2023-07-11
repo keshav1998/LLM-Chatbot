@@ -10,6 +10,9 @@ This repository contains the code for a chatbot that uses a large language model
 
 [DEMO.webm](https://github.com/keshav1998/LLM-Chatbot/assets/24654578/33bfbf55-b5f7-4172-9e37-347c87b4e6ac)
 
+🧑🏻‍💻 Notion:
+[Documentation](https://ml2018.notion.site/34a9640e9fc14508ab18e48ab78dddc4?v=ac38bd932462436ab2306ffece1ee666&pvs=4)
+
 
 ## ⚡️ Quick start
 
